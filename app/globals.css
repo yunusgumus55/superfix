@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    /* Site Editor Variables */
+    --text: #1e293b;
+    --header-bg: #ffffff;
+    --footer-bg: #f8fafc;
+    --card-bg: #ffffff;
+    --button-bg: #f97316;
+    --button-text: #ffffff;
+    --link-color: #2563eb;
+    --border-color: #e2e8f0;
+
+    --heading-font: "Inter, sans-serif";
+    --body-font: "Inter, sans-serif";
+    --base-size: 16px;
+    --h1-size: 2.5rem;
+    --h2-size: 2rem;
+    --h3-size: 1.75rem;
+    --h4-size: 1.5rem;
+    --h5-size: 1.25rem;
+    --h6-size: 1rem;
+    --font-weight: normal;
+    --heading-weight: bold;
+    --line-height: 1.5;
+
+    --image-border-radius: 8px;
+    --aspect-ratio: auto;
+    --thumbnail-size: 150px;
+    --logo-height: 40px;
+    --hero-height: 500px;
+    --card-image-height: 200px;
+
+    --container-width: 1280px;
+    --card-padding: 16px;
+    --section-spacing: 64px;
+    --element-spacing: 16px;
+    --border-radius: 8px;
+    --shadow-intensity: 10px;
+    --header-height: 80px;
+    --footer-padding: 64px;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 262.1 83.3% 57.8%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Site Editor Styles */
+  h1 {
+    font-family: var(--heading-font);
+    font-size: var(--h1-size);
+    font-weight: var(--heading-weight);
+    color: var(--text);
+  }
+
+  h2 {
+    font-family: var(--heading-font);
+    font-size: var(--h2-size);
+    font-weight: var(--heading-weight);
+    color: var(--text);
+  }
+
+  h3 {
+    font-family: var(--heading-font);
+    font-size: var(--h3-size);
+    font-weight: var(--heading-weight);
+    color: var(--text);
+  }
+
+  h4 {
+    font-family: var(--heading-font);
+    font-size: var(--h4-size);
+    font-weight: var(--heading-weight);
+    color: var(--text);
+  }
+
+  h5 {
+    font-family: var(--heading-font);
+    font-size: var(--h5-size);
+    font-weight: var(--heading-weight);
+    color: var(--text);
+  }
+
+  h6 {
+    font-family: var(--heading-font);
+    font-size: var(--h6-size);
+    font-weight: var(--heading-weight);
+    color: var(--text);
+  }
+
+  p,
+  span,
+  div {
+    font-family: var(--body-font);
+    font-size: var(--base-size);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    color: var(--text);
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  img {
+    border-radius: var(--image-border-radius);
+  }
+}
